@@ -1,0 +1,54 @@
+body {
+    background: blueviolet;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid blueviolet;
+    background: white;
+    font-size: 24px;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background: blueviolet;
+}
+
+.container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.theme-button {
+    font-size: 12px;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+}
+
+.theme-button:hover {
+    color: black;
+    background: white;
+}
+
+footer {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+}
