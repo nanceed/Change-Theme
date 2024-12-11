@@ -47,6 +47,16 @@ button:hover {
     background: white;
 }
 
+.baking-intro-picture {
+    border-radius: 10px;
+    transition: all 150ms ease-in-out;
+}
+
+.baking-intro-picture:hover {
+    filter: contrast(80%);
+    transform: scale(1.2);
+}
+
 footer {
     text-align: center;
     margin: 10px 0;
