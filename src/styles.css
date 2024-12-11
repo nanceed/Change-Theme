@@ -55,6 +55,19 @@ p {
     transform: scale(1.2);
 }
 
+.dark {
+    background: black;
+    color: white;
+}
+
+.dark .container {
+    background: grey;
+}
+
+.dark a {
+    color: blueviolet;
+}
+
 button {
     display: block;
     margin: 0 auto;
