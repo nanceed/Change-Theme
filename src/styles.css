@@ -1,10 +1,24 @@
+:root {
+    --primary-color:  #E19747;
+    --secondary-color:  #001D48;
+    --border-color: rgb(208, 218, 226);
+}
+
 body {
-    background: blueviolet;
+   background: linear-gradient(109.6deg, rgb(9, 154, 151) 11.2%, rgb(21, 205, 168) 91.1%);
 }
 
 h1,
 h2 {
     text-align: center;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 22px;
 }
 
 img {
@@ -16,21 +30,27 @@ p {
     line-height: 1.5;
 }
 
+a {
+    color: blueviolet;
+}
+
 .theme-button {
-    font-size: 12px;
-    background: black;
-    color: white;
-    padding: 10px 15px;
+    font-size: 18px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    padding: 15px 15px;
+
 }
 
 .theme-button:hover {
-    color: black;
-    background: white;
+    background:  var(--secondary-color);
 }
 
-.baking-intro-picture {
+.baking-intro-picture,
+.grid img {
     border-radius: 10px;
-    transition: all 300ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 .baking-intro-picture:hover {
@@ -47,8 +67,6 @@ p {
 
 .grid img {
     width: 100%;
-    border-radius: 10px;
-    transition: all 300ms ease-in-out;
 }
 
 .grid img:hover {
@@ -56,32 +74,38 @@ p {
 }
 
 .dark {
-    background: black;
+    background: radial-gradient(993px at 0.5% 98.5%, rgb(0, 239, 247) 0%, rgb(0, 122, 147) 46.7%, rgb(0, 29, 72) 100.2%);
     color: white;
 }
 
 .dark .container {
-    background: grey;
+    background: rgba(94, 94, 94);
 }
 
 .dark a {
-    color: blueviolet;
+    color: white;
+}
+
+.dark a:hover {
+    color: var(--secondary-color);
 }
 
 button {
     display: block;
     margin: 0 auto;
-    border: 1px solid blueviolet;
-    background: white;
-    font-size: 24px;
+    border: 1px solid var(--border-color);
+    background: var(--primary-color);
+    color: white;
+    font-size: 20px;
     border-radius: 6px;
     padding: 10px 15px;
     transition: all 150ms ease-in-out;
     cursor: pointer;
+    text-transform: capitalize;
 }
 
 button:hover {
-    background: blueviolet;
+    background: var(--secondary-color);
 }
 
 .container {
@@ -97,3 +121,6 @@ footer {
     margin: 10px 0;
     font-size: 18px;
 }
+
+
+
